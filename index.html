@@ -13,10 +13,52 @@ const WEBSITE_URL = "https://lingan.art";
     <link rel="shortcut icon" href="images/ico.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/xuandongkaishu/dist/XuandongKaishu/result.css' />
+
+    <!-- Add global font size adjustment -->
+    <style>
+      html, body {
+        font-size: 20px; /* Increase base font size */
+      }
+      /* Ensure all text elements inherit the proper font size */
+      p, div, span, li, td {
+        font-size: 1.05em; /* This ensures proper inheritance from the body */
+      }
+      
+      /* Adjust specific elements that might need proportional scaling */
+      h2 {
+        font-size: 2em;
+      }
+      
+      .papertitle {
+        font-size: 1.1em;
+        font-weight: 600;
+      }
+      
+      .header_navi {
+        font-size: 1em;
+      }
+      /* Ensure links are properly sized */
+      a {
+        font-size: inherit;
+      }
+      
+      /* Make sure biography text is clearly legible */
+      #bio + p, #bio ~ p {
+        line-height: 1.5; /* Improved line spacing for readability */
+      }
+      
+      /* Adjust the scrollable news section */
+      .scrollable p {
+        font-size: 0.95em;
+        line-height: 1.4;
+      }
+    </style>
     
   </head>
 
   <body>
+
+    
 
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom: 30px"><tbody>
       <tr style="padding:0px">
@@ -26,6 +68,7 @@ const WEBSITE_URL = "https://lingan.art";
           <a href="#publication" style="padding-right: 30px;padding-left: 30px" class="header_navi">Publications</a>
           <a href="#service" style="padding-right: 30px;padding-left: 30px" class="header_navi">Services</a>
           <a href="#award" style="padding-right: 30px;padding-left: 30px" class="header_navi">Awards</a>
+          <a href="cv/cv_en.pdf" target="_blank" style="padding-right: 30px;padding-left: 30px" class="header_navi">CV</a>
         </td>
       </tr>
     </tbody></table>
@@ -79,6 +122,10 @@ const WEBSITE_URL = "https://lingan.art";
                 <p>
                     Previously, I obtained my M.S. degree from Sun Yat-sen University in 2021, advised by Prof. <a href="https://www.isee-ai.cn/~zhwshi/" target="_blank">Wei-Shi Zheng</a>. Before that, I obtained my B.E. degree from the University of Electronic Science and Technology of China in 2019.
                 </p>
+                <p>
+                    <span style="color: red; font-weight: bold;">I'm seeking full-time positions/postdoc/intern starting in 2025. :)</span> 
+                    Here is my <a href="cv/cv_en.pdf" target="_blank">CV</a>.
+                </p>
               </td>
             </tr>
           </tbody></table>
@@ -90,7 +137,7 @@ const WEBSITE_URL = "https://lingan.art";
               <h2>
                 News
               </h2>
-              <div class="scrollable" style="max-height:130px; overflow-y:scroll; padding-right:10px; margin-top: 10px; margin-bottom: 10px">
+              <div class="scrollable" style="max-height:150px; overflow-y:scroll; padding-right:10px; margin-top: 10px; margin-bottom: 10px">
                 <p>
                   <span style="font-size: smaller">➤</span> [2025-02] One paper accepted in CVPR 2025.
                 </p>
@@ -337,6 +384,17 @@ const WEBSITE_URL = "https://lingan.art";
                 <strong>Ling-An Zeng</strong>, Guohong Huang, Gaojie Wu, Wei-Shi Zheng*
                 <br>
                 <em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2025.
+                <br>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding-left: 20px; padding-bottom: 25px ; width:100%; vertical-align:middle">
+                <span class="papertitle">TechCoach: Towards Technical Keypoint-Aware Descriptive Action Coaching</span>
+                <br>
+                Yuan-Ming Li‡†, An-Lan Wang†, Kun-Yu Lin, Yu-Ming Tang, <strong>Ling-An Zeng</strong>, Jian-Fang Hu, Wei-Shi Zheng*
+                <br>
+                <em>arXiv</em>, 2024.
                 <br>
               </td>
             </tr>
